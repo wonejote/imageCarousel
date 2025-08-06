@@ -1,7 +1,7 @@
 
 .carouselImg{
-    flex-shrink: 0;
     width: 500px;
+    height: auto;
 }
 
 .carousel{
@@ -9,9 +9,47 @@
      transition: 1s;
     
 }
+.copiaImg1{
+    transition: 0;
+}
 
 .frame{
     width: 500px;
-    height: 500px;
-    overflow: hidden
+    overflow: hidden;
+    position: relative;
+}
+
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5em 0.8em;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+
+.btn:hover {
+    background-color: rgba(0,0,0,0.7);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.barraNav{
+    position: absolute;
+    top:95%;
+    left: 40%;
+    background-color: rgba(0,0,0,0.5);
+    color: aliceblue;
+    align-self: center;
 }
